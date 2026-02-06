@@ -23,7 +23,7 @@ public class NotificationService {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, false, "UTF-8");
 
-            helper.setFrom("testerikpro@mail.ru"); // или можно через @Value из properties
+            helper.setFrom("testerikpro@mail.ru");
             helper.setTo(notification.getEmail());
             helper.setSubject("Код подтверждения");
             helper.setText(
